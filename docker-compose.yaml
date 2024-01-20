@@ -1,0 +1,38 @@
+version: "3.7"
+
+services:
+  # aplicacion
+  backend:
+    build: .
+    image: tiendavirtual
+    environment:
+      - SQL_URL=jdbc:mysql://mysql:3306
+    depends_on:
+      - 'mysql'
+    ports:
+      - '80:8080'
+    networks:
+      - localnet
+
+  # base de datos
+  mysql:
+    image: mysql:8.1.0
+    environment:
+      - MYSQL_ROOT_PASSWORD=admin
+      - DATABASE_USER=root
+      - DATABASE_PASSWORD=admin
+    ports:
+      - '3306:3306'
+    volumes:
+      - dbdata:/data/db
+    networks:
+      - localnet
+
+# volumen donde se guardan los datos    
+volumes:
+  dbdata:
+
+# red para unir ambos componentes
+networks:
+  localnet:
+    driver: bridge

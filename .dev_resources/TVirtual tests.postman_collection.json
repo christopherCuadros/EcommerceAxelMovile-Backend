@@ -1,0 +1,569 @@
+{
+	"info": {
+		"_postman_id": "6e076b59-0bfa-4d62-a603-708fe4c0f86d",
+		"name": "TVirtual tests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29571097"
+	},
+	"item": [
+		{
+			"name": "Característica",
+			"item": [
+				{
+					"name": "Listar",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API}}/caracteristica",
+							"host": [
+								"{{API}}"
+							],
+							"path": [
+								"caracteristica"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\":\"123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API}}/caracteristica",
+							"host": [
+								"{{API}}"
+							],
+							"path": [
+								"caracteristica"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ListarUno",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Modificar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\":\"456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API}}/caracteristica/1",
+							"host": [
+								"{{API}}"
+							],
+							"path": [
+								"caracteristica",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Borrar",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{API}}/caracteristica/1",
+							"host": [
+								"{{API}}"
+							],
+							"path": [
+								"caracteristica",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Categoría",
+			"item": [
+				{
+					"name": "Listar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API}}/caracteristica",
+							"host": [
+								"{{API}}"
+							],
+							"path": [
+								"caracteristica"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ListarUno",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API}}/caracteristica/1",
+							"host": [
+								"{{API}}"
+							],
+							"path": [
+								"caracteristica",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\":\"456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API}}/caracteristica",
+							"host": [
+								"{{API}}"
+							],
+							"path": [
+								"caracteristica"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Modificar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\":\"456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API}}/caracteristica/1",
+							"host": [
+								"{{API}}"
+							],
+							"path": [
+								"caracteristica",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Borrar",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{API}}/caracteristica/1",
+							"host": [
+								"{{API}}"
+							],
+							"path": [
+								"caracteristica",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Producto",
+			"item": [
+				{
+					"name": "Listar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API}}/caracteristica",
+							"host": [
+								"{{API}}"
+							],
+							"path": [
+								"caracteristica"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ListarUno",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API}}/producto/1",
+							"host": [
+								"{{API}}"
+							],
+							"path": [
+								"producto",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear (Nueva car y cat)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"producto\",\r\n    \"descripcion\": \"un producto\",\r\n    \"stock\": 500,\r\n    \"precio_soles\": 10.50,\r\n    \"categoria\":{\r\n        \"descripcion\": \"sadasdasd\"\r\n    },\r\n    \"caracteristicas\":[\r\n        {\r\n            \"nombre_caracteristica\": \"caractgeristica 123\",\r\n            \"valor\": \"completo\"\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API}}/producto",
+							"host": [
+								"{{API}}"
+							],
+							"path": [
+								"producto"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear (Usando car y cat)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"producto\",\r\n    \"descripcion\": \"un producto\",\r\n    \"stock\": 500,\r\n    \"precio_soles\": 10.50,\r\n    \"categoria\":{\r\n        \"id\": 1\r\n    },\r\n    \"caracteristicas\":[\r\n        {\r\n            \"id\": 1,\r\n            \"valor\": \"completo\"\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API}}/producto",
+							"host": [
+								"{{API}}"
+							],
+							"path": [
+								"producto"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Modificar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"producto\",\r\n    \"descripcion\": \"un producto\",\r\n    \"stock\": 500,\r\n    \"precio_soles\": 10.50,\r\n    \"categoria\":{\r\n        \"id\": 1\r\n    },\r\n    \"caracteristicas\":[\r\n        {\r\n            \"id\": 1,\r\n            \"valor\": \"completo\"\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API}}/producto/1",
+							"host": [
+								"{{API}}"
+							],
+							"path": [
+								"producto",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Borrar",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{API}}/producto/1",
+							"host": [
+								"{{API}}"
+							],
+							"path": [
+								"producto",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Marca",
+			"item": [
+				{
+					"name": "Listar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API}}/marca",
+							"host": [
+								"{{API}}"
+							],
+							"path": [
+								"marca"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ListarUno",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API}}/marca/1",
+							"host": [
+								"{{API}}"
+							],
+							"path": [
+								"marca",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\":\"asdas\",\r\n    \"descripcion\":\"asad\",\r\n    \"imagen\":\"asadd\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API}}/marca",
+							"host": [
+								"{{API}}"
+							],
+							"path": [
+								"marca"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Modificar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\":\"asdas123\",\r\n    \"descripcion\":\"asad\",\r\n    \"imagen\":\"asadd\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API}}/marca/1",
+							"host": [
+								"{{API}}"
+							],
+							"path": [
+								"marca",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Borrar",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{API}}/marca/1",
+							"host": [
+								"{{API}}"
+							],
+							"path": [
+								"marca",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Oferta",
+			"item": [
+				{
+					"name": "Leer",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API}}/oferta",
+							"host": [
+								"{{API}}"
+							],
+							"path": [
+								"oferta"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "LeerUno",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API}}/oferta/1",
+							"host": [
+								"{{API}}"
+							],
+							"path": [
+								"oferta",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"porcentaje\": 30,\r\n    \"nuevo_precio\": 10.5,\r\n    \"fecha_inicio\": [\r\n        2024,\r\n        1,\r\n        18,\r\n        12,\r\n        37,\r\n        27\r\n    ],\r\n    \"fecha_finalizacion\": [\r\n        2024,\r\n        1,\r\n        18,\r\n        12,\r\n        37,\r\n        27\r\n    ],\r\n    \"id_producto\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API}}/oferta",
+							"host": [
+								"{{API}}"
+							],
+							"path": [
+								"oferta"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{API}}/oferta/1",
+							"host": [
+								"{{API}}"
+							],
+							"path": [
+								"oferta",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
